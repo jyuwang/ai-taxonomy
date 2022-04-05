@@ -1,0 +1,123 @@
+html {
+    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+    background-color: white;
+    
+  }
+
+h1 {
+    font-size: 60px;
+    text-align: left;
+    color: #41403E;
+    /* background-color: #F7F3F0; */
+}
+
+
+h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+    color: #41403E;
+}
+
+h3 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #41403E;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    color: #41403E;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h6 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+p {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21.86px;
+    color: #41403E;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 0 30px 30px 30px;
+    /* border: 5px solid black; */
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #E5E5E5; /* Green background */
+    border: 1px solid #41403E; /* Green border */
+    color: #41403E; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+
+button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+button:hover {
+    background-color: #BCBBB9;
+}
+
+/* experimentation below */
+
+#test {
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 175px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    padding-right: 0px;
+    background-color: #F7F3F0;
+    }
+    
+.sidebar div {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 24px;
+    display: block;
+}
+    
+.body-text {
+    margin-left: 175px;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics */
