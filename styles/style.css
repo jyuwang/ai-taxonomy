@@ -6,49 +6,151 @@ html {
   }
 
 h1 {
+    /* H1 */
+
+    font-family: 'Montserrat', montserrat;
+    font-style: normal;
+    font-weight: 700;
     font-size: 60px;
-    text-align: left;
-    color: #41403E;
-    /* background-color: #F7F3F0; */
+    line-height: 140%;
+    /* or 84px */
+
+    letter-spacing: -0.01em;
+
+    /* Black */
+
+    color: #252525;
 }
 
 
 h2 {
+    /* H2 */
+
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 30px;
-    color: #41403E;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 140%;
+    /* or 78px */
+
+    letter-spacing: -0.01em;
+
+    /* Black */
+
+    color: #252525;
 }
 
 h3 {
-    font-weight: 600;
+    /* H3 */
+
+    font-family: 'Montserrat';
     font-style: normal;
-    font-size: 20px;
-    line-height: 30px;
-    color: #41403E;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    /* or 50px */
+
+    letter-spacing: -0.005em;
+
+    /* Black */
+
+    color: #252525;
 }
 
 h4 {
+    /* H4 */
+
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 30px;
-    color: #41403E;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    /* or 170% */
+
+    letter-spacing: -0.005em;
+
+    /* Black */
+
+    color: #252525;
 }
 
 h5 {
+    /* H5 */
+
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+
+    /* Black */
+
+    color: #252525;
 }
 
 h6 {
+    /* H6 */
+
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    /* Black */
+
+    color: #252525;
+}
+
+b1 {
+    /* B1 */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    /* Black */
+
+    color: #252525;
+}
+
+b2 {
+    /* B2 */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+
+
+    /* Black */
+
+    color: #252525;
+}
+
+caption {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+
+    font-variant: small-caps;
+
+    /* Black */
+
+    color: #252525;
 }
 
 p {
@@ -119,5 +221,63 @@ button:hover {
 .body-text {
     margin-left: 175px;
 }
+
+.banner {
+    margin-left: 175px;
+    position: relative;
+    width: 1260px;
+    height: 419px;
+
+    background: linear-gradient(108.92deg, rgba(8, 46, 114, 0.2) 7.06%, rgba(8, 46, 114, 0) 62.76%), #004D40;
+}
+
+.bannerText {
+    padding: 40px;
+}
+
+.collection {
+    margin-left: 175px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 20px;
+}
+
+.box {
+    border: 2px solid #303838;
+    width: 531px;
+    height: 196px;
+    left: 334px;
+    top: 891px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 150px 381px;
+}
+
+.boxImg {
+    position: relative;
+    top: 55px;
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.boxText {
+    position: relative;
+    top: -10px;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
 
 /* https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics */
