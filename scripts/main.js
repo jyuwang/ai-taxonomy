@@ -11,6 +11,9 @@ const domainList = ["AI DOMAIN", "Risk Mitigation & Security", "Healthcare",
                 /* class tag assignments */
 const domainhead = document.getElementById("domain-header");
 
+const banner = document.getElementsByClassName("banner");
+const collection = document.getElementsByClassName("collection");
+
 // -------------------------------------
 const selfeaturehead = document.getElementById("selected-feature-header");
 const selfeaturedesc = document.getElementById("selected-feature-description");
@@ -27,7 +30,7 @@ const servicetypedesc = document.getElementById("service-type-description");
 
 let navdomainlist = document.getElementsByTagName("nav")[0];
 let navfeaturelist = document.getElementsByTagName("nav")[1];
-const featurelist =document.getElementById("feature-list");
+const featurelist = document.getElementById("feature-list");
 
 
                         /* NOW LETS CHANGE THINGS UP */
@@ -53,6 +56,13 @@ for(const domain of Object.keys(updatedDomainList).sort()) {
 
 // setLocation("Education", "aes");
 
+function removeElementsByClass(className){
+    var elements = document.getElementsByClassName(className);
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+
 
 function setLocation(domain, feature){
     // console.log("FIRST: " + domain);
@@ -65,12 +75,17 @@ function setLocation(domain, feature){
 
     // window.location.search = domain + "/" + feature;
 
+    // clear everything from the landing page
+    // removeElementsByClass("banner");
+    // removeElementsByClass("collection");
+
     // update the URL
     // update the page content (HTML strategy)
     document.getElementById("feature-list").innerHTML="";
     // domain in updatedDomainList // checks if the domain is actually in the list -> bool
 
     // CHANGING THE HEADER OF THE PAGE
+    let domainhead = document.getElementById("domain-header");
     domainhead.innerHTML = updatedDomainList[domain].title;
 
     // CHANGING THE FEATURE SECTION
@@ -101,15 +116,19 @@ function setLocation(domain, feature){
         header.id = "test";
         description.id = "test";
 
+        let featurelist = document.getElementById("feature-list");
         featurelist.appendChild(header);
         featurelist.appendChild(description);
     }
 
     // CHANGE THE SELECTED AI FEATURE HEADER
+    let selfeaturehead = document.getElementById("selected-feature-header");
+    let selfeaturedesc = document.getElementById("selected-feature-description");
     selfeaturehead.innerHTML = updatedDomainList[domain].featureList[feature].header;
     selfeaturedesc.innerHTML = updatedDomainList[domain].featureList[feature].description;
 
     // CHANGING THE SELECTED FEATURE SECTION
+    let selCapabilityList = document.getElementById("capability-list");
     selCapabilityList.innerHTML = '';
     for(let x in updatedDomainList[domain].featureList[feature].capabilityList) {
         let header = document.createElement("h3");
@@ -119,61 +138,157 @@ function setLocation(domain, feature){
         selCapabilityList.appendChild(header);
     }
 
+    let servicevaluehead = document.getElementById("service-value-header");
+    let servicevaluedesc = document.getElementById("service-value-description");
+
+    let customervaluehead = document.getElementById("customer-value-header");
+    let customervaluedesc = document.getElementById("customer-value-description");
+
+    let servicetypehead = document.getElementById("service-type-header");
+    let servicetypedesc = document.getElementById("service-type-description");
+
+    servicevaluehead.innerHTML = "Value for Service";
     servicevaluedesc.innerHTML = updatedDomainList[domain].featureList[feature].serviceValue;
 
+    customervaluehead.innerHTML = "Value for Customer";
     customervaluedesc.innerHTML = updatedDomainList[domain].featureList[feature].customValue;
 
+    servicetypehead.innerHTML = "Service Type";
     servicetypedesc.innerHTML = updatedDomainList[domain].featureList[feature].serviceType;
     
 }
 
-// getting the origin of the website (protocol + hostname + port number)
-// console.log(window.location.origin);
 
-// // getting the protocal of the website
-// console.log(window.location.protocol);
+// function that generates the domain landing page
+function buildLanding(){
+    console.log("attempted to build landing");
 
-// // getting the host and hostname
-// console.log(window.location.host);
-// console.log(window.location.hostname);
+    let banner = document.createElement("section");
+    banner.classList = "banner";
+    let bannerText = document.createElement("div");
+    bannerText.innerHTML = "<h1 id='whiteText'> Domains (14) </h1> <b1 id='whiteText2'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </b1> ";
+    bannerText.classList = "bannerText";
+    banner.appendChild(bannerText)
+    document.body.appendChild(banner);
+    document.getElementById("whiteText").style.color = "#FFFFFF";
+    document.getElementById("whiteText2").style.color = "#FFFFFF";
+    // build the collection
+    let collection = document.createElement("section");
+    collection.classList = "collection";
+    document.body.appendChild(collection);
 
-// // getting the port number
-// console.log(window.location.port);
+    // build a box for each domain
+    for(const domain of Object.keys(updatedDomainList).sort()) {
+        // console.log("attempted to build box for " + domain);
 
-// // getting the pathname
-// console.log(window.location.pathname);
+        let feature1 = Object.keys(updatedDomainList[domain].featureList)[0];
 
-// // get the query string portion
-// console.log("query string portion: " + window.location.search);
-// window.location.search = "test";
+        let box = document.createElement("div");
+        box.classList = "box";
+        box.addEventListener("click", () => {
+            // let feature1 = Object.keys(updatedDomainList[domain].featureList)[0];
+            let path = [domain, feature1];
+            navigateTo(path);
+            console.log("please navigate to " + domain + " | " + feature1);
+        });
 
-// console.log("query string portion2: " + window.location.search);
+        // prep Image insertion
+        let elem = document.createElement("img");
+        elem.src = "images\\Feature Icons\\" + feature1 + "_1.svg";
+        elem.alt = updatedDomainList[domain].title + " Icon";
+
+        // prep Feature list insertion
+        let featureListString = "";
+        for(let x in updatedDomainList[domain].featureList) {
+            featureListString += updatedDomainList[domain].featureList[x].header + ", ";
+        }
+        featureListString = featureListString.slice(0, -2);
+
+        let boxImg = document.createElement("div");
+        boxImg.classList = "boxImg";
+        boxImg.appendChild(elem);
+        box.appendChild(boxImg);
+
+        let boxText = document.createElement("div");
+        boxText.classList = "boxText";
+        boxText.innerHTML =  "<h4>" + updatedDomainList[domain].title + "</h4>"
+        + "<b2>" + featureListString + "</b2>";
+        box.appendChild(boxText);
 
 
-// console.log(window.location.toString());
 
-// function that searches for URL parameters and returns their values
-// function getParameter(parameterName) {
-//     let parameters = new URLSearchParams(window.location.search);
-//     return parameters.get( parameterName );
-// }
-// URL will look like file://path/to/index.html?domain=DOM&feat=FEAT
-// use like: getParameter("domain") will return DOM
-// console.log(getParameter("domain"));
-// console.log(getParameter("feature"));
+        collection.appendChild(box);
+    }
+}
 
+// function that builds the skeleton for a specific domain
+function buildSkeleton(){
+    console.log("attempted to build skeleton");
+    let bodyText = document.createElement("div");
+    bodyText.classList = "body-text";
 
+    let dummy = document.createElement("caption");
+    dummy.innerHTML = "Dummy";
 
+    let domainHeader = document.createElement("h1");
+    domainHeader.setAttribute('id', "domain-header");
+    domainHeader.innerHTML = "Domain Header";
+    bodyText.appendChild(domainHeader);
 
-// so I could have a function1 that calls that getParamter function, then uses those values as inputs to my setLocation
-// each button click in setLocation would then no longer be a call to setLocation, but rather a call to a new function
-// which updates the url. The page will then reflect that by function1 running again and updating the page
+    let featureList = document.createElement("ul");
+    featureList.setAttribute('id', "feature-list");
+    featureList.innerHTML = "Feature List";
+    featureList.appendChild(dummy);
+    bodyText.appendChild(featureList);
+    
 
-// function func1() {
-//     setLocation(getParameter("domain"), getParameter("feature"));
-// }
+    let selectedFeatureHeader = document.createElement("h2");
+    selectedFeatureHeader.setAttribute('id', "selected-feature-header");
+    selectedFeatureHeader.innerHTML = "selectedFeatureHeader";
+    bodyText.appendChild(selectedFeatureHeader);
 
+    let selectedFeatureDescription = document.createElement("h4");
+    selectedFeatureDescription.setAttribute('id', "selected-feature-description");
+    selectedFeatureDescription.innerHTML = "selectedFeatureDescription";
+    bodyText.appendChild(selectedFeatureDescription);
 
+    let capabilityList = document.createElement("ul");
+    capabilityList.setAttribute('id', "capability-list");
+    capabilityList.innerHTML = "capabilityList";
+    bodyText.appendChild(capabilityList);
+
+    let sValueHeader = document.createElement("h5");
+    sValueHeader.setAttribute('id', "service-value-header");
+    sValueHeader.innerHTML = "sValueHeader";
+    bodyText.appendChild(sValueHeader);
+
+    let sValueDescription = document.createElement("h6");
+    sValueDescription.setAttribute('id', "service-value-description");
+    sValueDescription.innerHTML = "sValueDescription";
+    bodyText.appendChild(sValueDescription);
+
+    let cValueHeader = document.createElement("h5");
+    cValueHeader.setAttribute('id', "customer-value-header");
+    cValueHeader.innerHTML = "cValueHeader";
+    bodyText.appendChild(cValueHeader);
+
+    let cValueDescription = document.createElement("h6");
+    cValueDescription.setAttribute('id', "customer-value-description");
+    cValueDescription.innerHTML = "cValueDescription";
+    bodyText.appendChild(cValueDescription);
+
+    let sTypeHeader = document.createElement("h5");
+    sTypeHeader.setAttribute('id', "service-type-header");
+    sTypeHeader.innerHTML = "sTypeHeader";
+    bodyText.appendChild(sTypeHeader);
+
+    let sTypeDescription = document.createElement("h6");
+    sTypeDescription.setAttribute('id', "service-type-description");
+    sTypeDescription.innerHTML = "sTypeDescription";
+    bodyText.appendChild(sTypeDescription);    
+
+    document.body.appendChild(bodyText);
+}
 
 
 // function that reads the URL, then updates the page state
@@ -181,14 +296,32 @@ function updateFromSearch() {
     // console.log("updateFromSearch called");
 
     let search = (window.location.search != "" ? window.location.search.substr(1) : "");
-    // console.log("search from updateFromSearch: " + search);
+    console.log("search from updateFromSearch: " + search);
+    
+    if(search != "") {
+        removeElementsByClass("body-text");
+        removeElementsByClass("banner");
+        removeElementsByClass("collection");
+        buildSkeleton();
+
+        let path = search.split('/')
+        setLocation(path[0], path[1]);
+    }
+    else {
+        removeElementsByClass("body-text");
+        removeElementsByClass("banner");
+        removeElementsByClass("collection");
+        buildLanding();
+    }
+
+
     let path = search.split('/')
     // console.log("path from updateFromSearch: " + path);
 
     // if the path doesn't math a domain/feature, set to some default path (ask designers what that should be)
 
     // call page update function to write contents of page
-    setLocation(path[0], path[1]);
+    
 }
 
 // this will trigger updateFromSearch() whenever someone presses the 'back' or 'forward' buttons in the browser
@@ -199,6 +332,7 @@ function initalPageLoad() {
     let path = ["Education", "aes"];
     window.history.pushState(null, '', '?' + path.join('/'))
     // FireFox doesn't actually call the popstate event on initial page load, so call it. This is redundant for other browsers
+    console.log(path[0] + "   " + path[1]);
     updateFromSearch();
 }
 
