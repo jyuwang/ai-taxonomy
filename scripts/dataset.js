@@ -1,43 +1,43 @@
 const updatedDomainList = {
-    "Generic" : {
-        title : "Generic AI Domain",
-        featureList : {
-            "f1" : {header : "Feature #1", description : "This 1st feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
-             capabilityList : [
-                {level1 : "Capability 1"},
-                {level1 : "Capability 2"},
-                {level1 : "Capability 3"},
-             ], 
-             serviceValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", 
-             customValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
-             serviceType : "x2x" ,
-            },
-            "f2" : {header : "Feature #2", description : "This 2nd feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
-             capabilityList : [
-                {level1 : "Capability 1"},
-                {level1 : "Capability 2"},
-                {level1 : "Capability 3"},
-             ], 
-             serviceValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", 
-             customValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
-             serviceType : "x2x" ,
-            },
-            "f3" : {header : "Feature #3", description : "This 3rd feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
-             capabilityList : [
-                {level1 : "Capability 1"},
-                {level1 : "Capability 2"},
-                {level1 : "Capability 3"},
-             ], 
-             serviceValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", 
-             customValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
-             serviceType : "x2x" ,
-            },
-        },
-    },
+    // "Generic" : {
+    //     title : "Generic AI Domain",
+    //     featureList : {
+    //         "f1" : {header : "Feature #1", description : "This 1st feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+    //          capabilityList : [
+    //             {level1 : "Capability 1"},
+    //             {level1 : "Capability 2"},
+    //             {level1 : "Capability 3"},
+    //          ], 
+    //          serviceValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", 
+    //          customValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+    //          serviceType : "x2x" ,
+    //         },
+    //         "f2" : {header : "Feature #2", description : "This 2nd feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+    //          capabilityList : [
+    //             {level1 : "Capability 1"},
+    //             {level1 : "Capability 2"},
+    //             {level1 : "Capability 3"},
+    //          ], 
+    //          serviceValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", 
+    //          customValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+    //          serviceType : "x2x" ,
+    //         },
+    //         "f3" : {header : "Feature #3", description : "This 3rd feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+    //          capabilityList : [
+    //             {level1 : "Capability 1"},
+    //             {level1 : "Capability 2"},
+    //             {level1 : "Capability 3"},
+    //          ], 
+    //          serviceValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...", 
+    //          customValue : "The feature... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...",
+    //          serviceType : "x2x" ,
+    //         },
+    //     },
+    // },
     "Risk" : {
         title : "Risk Mitigation & Security",
         featureList : {
-            "bs" : {header : "Biometric Security", description : "This feature uses a person's individual biology in place of a key, PIN, or password. Systems using this feature first detects a biological signal from the user, such as a voice or a fingerprint. They then identify if this signal comes from a specific person it has been trained to identify. The verification process authenticates non-transferable, physical characteristics and thus ensures secure access.",
+            "Biometric" : {header : "Biometric Security", description : "This feature uses a person's individual biology in place of a key, PIN, or password. Systems using this feature first detects a biological signal from the user, such as a voice or a fingerprint. They then identify if this signal comes from a specific person it has been trained to identify. The verification process authenticates non-transferable, physical characteristics and thus ensures secure access.",
             capabilityList : [
                 {level1 : "Detect face in image"},
                 {level1 : "Identify face in image"},
@@ -52,7 +52,7 @@ const updatedDomainList = {
              customValue : "The feature provides a type of password that a user can never forget and that they can never forget to bring with them. It reduces the cognitive effort to access secure systems.",
              serviceType : "B2C" ,
             },
-            "ftd" : {header : "Fraudulent Transaction Detection", description : "This feature monitors for suspicious transactions in services like banking and healthcare. The feature works in two distinct ways. Systems can use a collection of prior fraudulent transactions to learn to identify fraud. These systems can either classify a transaction as fraudulent or they can produce a risk score indicating the likelihood the transaction is fraudulent. Systems can also examine a large collection of transactions and search for anomalies; transactions that look quite different from most other transactions.",
+            "Fraudulent" : {header : "Fraudulent Transaction Detection", description : "This feature monitors for suspicious transactions in services like banking and healthcare. The feature works in two distinct ways. Systems can use a collection of prior fraudulent transactions to learn to identify fraud. These systems can either classify a transaction as fraudulent or they can produce a risk score indicating the likelihood the transaction is fraudulent. Systems can also examine a large collection of transactions and search for anomalies; transactions that look quite different from most other transactions.",
             capabilityList : [
                 {level1 : "Identify fraud in transaction"},
                 {level1 : "Estimate fraud likelihood of transaction"},
@@ -67,7 +67,7 @@ const updatedDomainList = {
     "Health" : {
         title : "Healthcare",
         featureList : {
-           "dd" : {header : "Drug Discovery", description : "This feature learns the relationships between all current drugs’ protein structures and their effect on people, diseases, and medical conditions. Based on this large model of relationships, systems can assess different possible protein structures and assess their potential positive and negative impacts. This technique also allows drug companies to search for new uses for drugs they are already manufacturing.  ",
+           "Drug" : {header : "Drug Discovery", description : "This feature learns the relationships between all current drugs’ protein structures and their effect on people, diseases, and medical conditions. Based on this large model of relationships, systems can assess different possible protein structures and assess their potential positive and negative impacts. This technique also allows drug companies to search for new uses for drugs they are already manufacturing.  ",
             capabilityList : [
                 {level1 : "Discover relationships between drugs and treatment outcomes"},
                 {level1 : "Generate protein structure of drug"},
@@ -82,7 +82,7 @@ const updatedDomainList = {
              customValue : "n/a",
              serviceType : "B2B" ,
             },
-           "mia" : {header : "Medical Imaging Analysis", description : "This feature looks for cancer in medical images to assist clinicians in making decisions. Systems work in two different ways: some train on images known to show cancer. These can learn to identify if there is a tumor, if the tumor is cancerous, and even identify the specific type of cancer. Others analyze a collection of images and extract a small set of images that seem different than most images.",
+           "Medical" : {header : "Medical Imaging Analysis", description : "This feature looks for cancer in medical images to assist clinicians in making decisions. Systems work in two different ways: some train on images known to show cancer. These can learn to identify if there is a tumor, if the tumor is cancerous, and even identify the specific type of cancer. Others analyze a collection of images and extract a small set of images that seem different than most images.",
            capabilityList : [
                {level1 : "Detect medical anomaly in image"},
                {level1 : "Identify anomaly as tumor in image"},
@@ -95,7 +95,7 @@ const updatedDomainList = {
              customValue : "The feature provides clinicians insights to support their decision making. It also reduces unneeded patient stress created by misdiagnosis.",
              serviceType : "B2B" ,
             },
-           "shdg" : {header : "Synthetic Health Data Generation", description : "This feature generates new medical data to support AI developers in training new systems. Medical data might not be available or might be scarce in existing health records. In some cases, it can be inappropriate to use real patient data as it would reveal their identity. AI can examine a corpus of data and then generate new data that is different, but highly similar to the source data.",
+           "Synthetic" : {header : "Synthetic Health Data Generation", description : "This feature generates new medical data to support AI developers in training new systems. Medical data might not be available or might be scarce in existing health records. In some cases, it can be inappropriate to use real patient data as it would reveal their identity. AI can examine a corpus of data and then generate new data that is different, but highly similar to the source data.",
            capabilityList : [
                {level1 : "Generate new patient data from patient data"},
                {level1 : "Generate missing elements of patient data"},
@@ -108,7 +108,7 @@ const updatedDomainList = {
              customValue : "n/a",
              serviceType : "B2B" ,
             },
-           "swd" : {header : "Smartwatch Workout Detection", description : "This feature automatically detects and records the workout activities users perform, such as walking, running, and cycling. It can detect movement in sensor stream, and identify the type of workout from a predefined set of workouts. It can detect steps, and incidents such as a hard fall. It can also estimate the energy expenditure based on users' physical attributes.",
+           "Smartwatch" : {header : "Smartwatch Workout Detection", description : "This feature automatically detects and records the workout activities users perform, such as walking, running, and cycling. It can detect movement in sensor stream, and identify the type of workout from a predefined set of workouts. It can detect steps, and incidents such as a hard fall. It can also estimate the energy expenditure based on users' physical attributes.",
            capabilityList : [
                {level1 : "Detect motion in sensor stream"},
                {level1 : "Identify workout in sensor stream"},
@@ -125,7 +125,7 @@ const updatedDomainList = {
     "Manu" : {
         title : "Manufacturing & Agriculture",
         featureList : {
-            "cm" : {header : "Crop Monitoring", description : "This feature monitors and tracks crop health using aerial images. It can detect signs of stress, identify the source of stress, estimate the likely quantity of crops produced, and forecast the financial impact. Systems can also generate plans for distributing resources, like fertilizer and water, to maximize produce.",
+            "Crop" : {header : "Crop Monitoring", description : "This feature monitors and tracks crop health using aerial images. It can detect signs of stress, identify the source of stress, estimate the likely quantity of crops produced, and forecast the financial impact. Systems can also generate plans for distributing resources, like fertilizer and water, to maximize produce.",
             capabilityList : [
                 {level1 : "Detect crop stress in image"},
                 {level1 : "Identify crop stress type in image"},
@@ -137,7 +137,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent tracking how crops are growing. It allows faster interventions to address unfolding problems.",
              serviceType : "B2B" ,
             },
-            "dd" : {header : "Defect Detection", description : "This feature is used in manufacturing to continuously monitor manufactured goods for quality control and assurance. It can detect anomalies in products, often from an image. When an anomaly is detected, systems work to identify the type, scale, and cause, allowing for efficient intervention and repair. ",
+            "Defect" : {header : "Defect Detection", description : "This feature is used in manufacturing to continuously monitor manufactured goods for quality control and assurance. It can detect anomalies in products, often from an image. When an anomaly is detected, systems work to identify the type, scale, and cause, allowing for efficient intervention and repair. ",
             capabilityList : [
                 {level1 : "Detect product defect in image"},
                 {level1 : "Identify defect cause in image"},
@@ -149,7 +149,7 @@ const updatedDomainList = {
              customValue : "n/a",
              serviceType : "B2B" ,
             },
-            "rpap" : {header : "Robotic Pick and Place", description : "This feature speeds up the process of picking up items and placing them in other locations, typically in industrial contexts such as manufacturing or recycling. Robots can detect and identify objects, and estimate their location and orientation on a plane, such as an assembly line. They can generate a motion plan for grasping and moving the item, and act on the item to continuously update the motion plan.",
+            "RoboticPick" : {header : "Robotic Pick and Place", description : "This feature speeds up the process of picking up items and placing them in other locations, typically in industrial contexts such as manufacturing or recycling. Robots can detect and identify objects, and estimate their location and orientation on a plane, such as an assembly line. They can generate a motion plan for grasping and moving the item, and act on the item to continuously update the motion plan.",
             capabilityList : [
                 {level1 : "Detect objects in image"},
                 {level1 : "Identify object in image"},
@@ -166,7 +166,7 @@ const updatedDomainList = {
     "Energy" : {
         title : "Energy & Infrastructure",
         featureList : {
-            "pm" : {header : "Predictive Maintenance", description : "This feature builds a model that describes the conditions under which a system breaks down. It can estimate the likelihood that a breakdown will happen, forecast when a breakdown will happen, estimate the cost and duration of a breakdown, and it can help produce an optimal schedule for repairs and ongoing maintenance.",
+            "Predictive" : {header : "Predictive Maintenance", description : "This feature builds a model that describes the conditions under which a system breaks down. It can estimate the likelihood that a breakdown will happen, forecast when a breakdown will happen, estimate the cost and duration of a breakdown, and it can help produce an optimal schedule for repairs and ongoing maintenance.",
             capabilityList : [
                 {level1 : "Detect machine sound in audio"},
                 {level1 : "Identify machine breakdown in audio"},
@@ -180,7 +180,7 @@ const updatedDomainList = {
              customValue : "The feature improves users' experience by reducing tedium in managing breakdowns and repairs.",
              serviceType : "B2B" ,
             },
-            "heo" : {header : "Home Energy Optimization", description : "This feature optimizes energy use at home based on users' schedule and temperature preferences. It can discover people's schedule in temperature data and by detecting their presence using motion sensors. It can estimate preferred temperature of users based on their use. It can forecast peak usage of energy, and generate a temperature plan for a home.",
+            "Home" : {header : "Home Energy Optimization", description : "This feature optimizes energy use at home based on users' schedule and temperature preferences. It can discover people's schedule in temperature data and by detecting their presence using motion sensors. It can estimate preferred temperature of users based on their use. It can forecast peak usage of energy, and generate a temperature plan for a home.",
             capabilityList : [
                 {level1 : "Detect human presence in sensor stream"},
                 {level1 : "Estimate preferred temperature of user"},
@@ -199,7 +199,7 @@ const updatedDomainList = {
     "Office" : {
         title : "Office Productivity & Business Workflow",
         featureList : {
-            "tg" : {header : "Text Generation", description : "This feature provides users with guesses for the word or sentence they are typing as part of searching, messaging, and word processing services. Many of these systems work off pre-trained models that have examined huge quantities of written documents, learning the relationships between words. Others offer more personalized content, learning specific terms an individual user frequently types.",
+            "Text" : {header : "Text Generation", description : "This feature provides users with guesses for the word or sentence they are typing as part of searching, messaging, and word processing services. Many of these systems work off pre-trained models that have examined huge quantities of written documents, learning the relationships between words. Others offer more personalized content, learning specific terms an individual user frequently types.",
             capabilityList : [
                 {level1 : "Compare phrases by partial sentence fit"},
                 {level1 : "Generate next word of sentence"},
@@ -209,7 +209,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent typing.",
              serviceType : "B2C" ,
             },
-            "sf" : {header : "Spam Filter", description : "This feature filters spam emails by identifying words associated with spam emails, as well as other characteristics such as the sender. Emails identified as spam are automatically moved to a spam folder. This feature can also estimate the spam likelihood of email, and can mark email as suspicious if it is uncertain that the email is spam.",
+            "Spam" : {header : "Spam Filter", description : "This feature filters spam emails by identifying words associated with spam emails, as well as other characteristics such as the sender. Emails identified as spam are automatically moved to a spam folder. This feature can also estimate the spam likelihood of email, and can mark email as suspicious if it is uncertain that the email is spam.",
             capabilityList : [
                 {level1 : "Estimate spam likelihood of email"},
                 {level1 : "Identify spam in email"},
@@ -219,7 +219,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent sorting spam.",
              serviceType : "B2C" ,
             },
-            "lt" : {header : "Language Translation", description : "This feature generates machine translations for text. It can identify the input text language, and identify word and phrase translations in target language. Based on the identified words and phrases, it can generate a translation in target language.",
+            "Language" : {header : "Language Translation", description : "This feature generates machine translations for text. It can identify the input text language, and identify word and phrase translations in target language. Based on the identified words and phrases, it can generate a translation in target language.",
             capabilityList : [
                 {level1 : "Detect text in image"},
                 {level1 : "Identify language in text"},
@@ -232,7 +232,7 @@ const updatedDomainList = {
              customValue : "The feature allows users to communicate better by providing high quality translations.",
              serviceType : "B2C" ,
             },
-            "ms" : {header : "Meeting Summarization", description : "This feature automatically generates a meeting transcript, and a meeting summary based on the transcript. It can detect if a participant is speaking, and it can identify the words in audio to create the transcript.",
+            "Meeting" : {header : "Meeting Summarization", description : "This feature automatically generates a meeting transcript, and a meeting summary based on the transcript. It can detect if a participant is speaking, and it can identify the words in audio to create the transcript.",
             capabilityList : [
                 {level1 : "Detect voice in audio "},
                 {level1 : "Identify words in audio"},
@@ -250,7 +250,7 @@ const updatedDomainList = {
     "Marketing" : {
         title : "Marketing & Sales",
         featureList : {
-            "aiv" : {header : "AR Item Viewer", description : "This feature allows users to visualize online products in their physical space using their mobile devices, such as previewing a couch in a living room. It can detect a room and objects in a room. It can estimate target objects' location and size in room. It can then generate a virtually augmented room to render a preview of the product in 3d space.",
+            "AR" : {header : "AR Item Viewer", description : "This feature allows users to visualize online products in their physical space using their mobile devices, such as previewing a couch in a living room. It can detect a room and objects in a room. It can estimate target objects' location and size in room. It can then generate a virtually augmented room to render a preview of the product in 3d space.",
             capabilityList : [
                 {level1 : "Detect room in depth map "},
                 {level1 : "Detect room objects in depth map"},
@@ -265,7 +265,7 @@ const updatedDomainList = {
              customValue : "The feature improves users' experience by reducing tedium in obtaining information. It also provides users insights to support their decision making.",
              serviceType : "B2C" ,
             },
-            "pa" : {header : "Personalized Advertisements", description : "This features analyzes user behavior data to determine the best match between an ad and a set of users to allow services reach their audiences more effectively. It can discover similarities between users create groups or clusters. It can discover similarities between ads based on which ads users click.",
+            "PersonalizedAds" : {header : "Personalized Advertisements", description : "This features analyzes user behavior data to determine the best match between an ad and a set of users to allow services reach their audiences more effectively. It can discover similarities between users create groups or clusters. It can discover similarities between ads based on which ads users click.",
             capabilityList : [
                 {level1 : "Discover user similarities from user behavior"},
                 {level1 : "Discover ad similarities from user behavior"},
@@ -276,7 +276,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent analyzing user behavior data manually.",
              serviceType : "B2B" ,
             },
-            "wua" : {header : "Web usage Analytics", description : "This feature provides an analysis of web usage data to assess and improve websites. It can characterize a corpus of items based on similarity, and it can group users based on similarity in behavior. It can discover sequences of user navigation in websites. It can then compare products by a user's likelihood to click, and compare users to product fit to recommend relevant items.",
+            "Web" : {header : "Web usage Analytics", description : "This feature provides an analysis of web usage data to assess and improve websites. It can characterize a corpus of items based on similarity, and it can group users based on similarity in behavior. It can discover sequences of user navigation in websites. It can then compare products by a user's likelihood to click, and compare users to product fit to recommend relevant items.",
             capabilityList : [
                 {level1 : "Compare products by will-user-click"},
                 {level1 : "Compare users to product fit"},
@@ -294,7 +294,7 @@ const updatedDomainList = {
     "Hospitality" : {
         title : "Hospitality",
         featureList : {
-            "ra" : {header : "Review Analytics", description : "This feature analyzes customer reviews for services to provide insights on customer behavior and service breakdowns. It can identify user intent, sentiment, subject, and context in text. It can discover topic discussed in reviews.",
+            "Review" : {header : "Review Analytics", description : "This feature analyzes customer reviews for services to provide insights on customer behavior and service breakdowns. It can identify user intent, sentiment, subject, and context in text. It can discover topic discussed in reviews.",
             capabilityList : [
                 {level1 : "Identify subject in text"},
                 {level1 : "Identify sentiment in text"},
@@ -306,7 +306,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent analyzing customer reviews manually.",
              serviceType : "B2B" ,
             },
-            "sp" : {header : "Smart Pricing", description : "This feature predicts an optimal price for a rental property based on changing demand to assist property owners in setting prices. It analyzes rental data to forecast demand. Based on the demand, it forecasts the maximum price to charge while ensuring the property is rented. The feature considers factors such as the rental’s location, prices of listings in that location, size, amenities, the quality of the listing, and popular travel times.",
+            "Smart" : {header : "Smart Pricing", description : "This feature predicts an optimal price for a rental property based on changing demand to assist property owners in setting prices. It analyzes rental data to forecast demand. Based on the demand, it forecasts the maximum price to charge while ensuring the property is rented. The feature considers factors such as the rental’s location, prices of listings in that location, size, amenities, the quality of the listing, and popular travel times.",
             capabilityList : [
                 {level1 : "Forecast demand for listing"},
                 {level1 : "Forecast maximum price for listing"},
@@ -320,7 +320,7 @@ const updatedDomainList = {
     "Finance" : {
         title : "Finance",
         featureList : {
-            "rip" : {header : "Robotic Invoice Processing", description : "This feature digitizes and validates data from purchase orders to speed up invoice processing. It can convert handwriting on forms into text. It can reformat documents from external companies for internal processing, and it can output data in target formats. It can learn from employees when they demonstrate how to move data from the input form to the output form.",
+            "RoboticInvoice" : {header : "Robotic Invoice Processing", description : "This feature digitizes and validates data from purchase orders to speed up invoice processing. It can convert handwriting on forms into text. It can reformat documents from external companies for internal processing, and it can output data in target formats. It can learn from employees when they demonstrate how to move data from the input form to the output form.",
             capabilityList : [
                 {level1 : "Identify document type in image"},
                 {level1 : "Detect document structure in image"},
@@ -332,7 +332,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent processing invoices manually.",
              serviceType : "B2B" ,
             },
-            "str" : {header : "Stock Trading Recommendations", description : "This features provide insights on profitable stocks to help stock market traders, investors, and fund managers make trading decisions. It can discover relationships between news and stock prices. It can forecast future stock prices, and trading times for peak stock prices based on an analysis of all stocks.",
+            "Stock" : {header : "Stock Trading Recommendations", description : "This features provide insights on profitable stocks to help stock market traders, investors, and fund managers make trading decisions. It can discover relationships between news and stock prices. It can forecast future stock prices, and trading times for peak stock prices based on an analysis of all stocks.",
             capabilityList : [
                 {level1 : "Discover relationships between news and stock prices"},
                 {level1 : "Forecast peak price of stock"},
@@ -347,7 +347,7 @@ const updatedDomainList = {
     "Leisure" : {
         title : "Leisure, Content & Media",
         featureList : {
-            "ssqa" : {header : "Smart Speaker Question Answering", description : "This feature assists users' by responding to their verbal questions. It can detect human voice and user's query. It can compare responses by query fit, and generate human speech to deliver response verbally.",
+            "SmartSpeaker" : {header : "Smart Speaker Question Answering", description : "This feature assists users' by responding to their verbal questions. It can detect human voice and user's query. It can compare responses by query fit, and generate human speech to deliver response verbally.",
             capabilityList : [
                 {level1 : "Detect voice in audio"},
                 {level1 : "Identify voice in audio"},
@@ -361,7 +361,7 @@ const updatedDomainList = {
              customValue : "The feature improves users' experience by making it easier to search information. It also provides users more social experiences by allowing them to interact using natural language.",
              serviceType : "B2C" ,
             },
-            "mf" : {header : "Media Feed", description : "This feature curates a list of media elements users can select or that might autoplay. Users can often explicitly indicate content or entities that they like as a way of interacting with the system. The AI system often attempt to maximize specific user behaviors, such as engagement or dwell time. It can identify various elements in media posts. It can estimate user engagement for a media post, and rank posts by engagement.",
+            "Media" : {header : "Media Feed", description : "This feature curates a list of media elements users can select or that might autoplay. Users can often explicitly indicate content or entities that they like as a way of interacting with the system. The AI system often attempt to maximize specific user behaviors, such as engagement or dwell time. It can identify various elements in media posts. It can estimate user engagement for a media post, and rank posts by engagement.",
             capabilityList : [
                 {level1 : "Identify person's name in text"},
                 {level1 : "Detect face in image"},
@@ -384,7 +384,7 @@ const updatedDomainList = {
              customValue : "The feature allows users to be more social by providing more interesting and desirable content.",
              serviceType : "B2C" ,
             },
-            "gp" : {header : "Game Player", description : "This feature enables an AI agent to play against an opponent in games such as chess or poker. AI agent can compare game moves by impact, and generate a game plan to win the game by minimum amount of moves. It can act games moves to continuously update its plan in response to the opponents' moves.",
+            "Game" : {header : "Game Player", description : "This feature enables an AI agent to play against an opponent in games such as chess or poker. AI agent can compare game moves by impact, and generate a game plan to win the game by minimum amount of moves. It can act games moves to continuously update its plan in response to the opponents' moves.",
             capabilityList : [
                 {level1 : "Compare game moves by game impact"},
                 {level1 : "Generate game strategy for game"},
@@ -394,7 +394,7 @@ const updatedDomainList = {
              customValue : "The feature improves users' experience by providing an enhanced play experience.",
              serviceType : "B2C" ,
             },
-            "ist" : {header : "Image Style Transfer", description : "This feature allows users to apply a visual style of an image to another image, such as recreating a photo in a famous painter's style. It can identify the style of reference image, and the content in target image. It can generate a stylized version of target image using the reference image's style. It can estimate content similarity and style similarity of images to allow adjustments.",
+            "Image" : {header : "Image Style Transfer", description : "This feature allows users to apply a visual style of an image to another image, such as recreating a photo in a famous painter's style. It can identify the style of reference image, and the content in target image. It can generate a stylized version of target image using the reference image's style. It can estimate content similarity and style similarity of images to allow adjustments.",
             capabilityList : [
                 {level1 : "Identify content in target image"},
                 {level1 : "Identify style in reference image"},
@@ -406,7 +406,7 @@ const updatedDomainList = {
              customValue : "The feature allows users to be more social by sharing their stylized image creations.",
              serviceType : "B2C" ,
             },
-            "maff" : {header : "Mobile App Face Filter", description : "This feature allows users to create virtually augmented visual content using their mobile devices. It can detect people's face, eye, mouth, hair, hand, and body. It can identify hand gestures, face gestures and expressions, and body pose. It then generates virtual effects mapped to a person's features or in response to gestures and actions.",
+            "Mobile" : {header : "Mobile App Face Filter", description : "This feature allows users to create virtually augmented visual content using their mobile devices. It can detect people's face, eye, mouth, hair, hand, and body. It can identify hand gestures, face gestures and expressions, and body pose. It then generates virtual effects mapped to a person's features or in response to gestures and actions.",
             capabilityList : [
                 {level1 : "Detect background in image"},
                 {level1 : "Detect face in image"},
@@ -423,7 +423,7 @@ const updatedDomainList = {
              customValue : "The feature allows users to be more social by sharing their the visual content they generated.",
              serviceType : "B2C" ,
             },
-            "df" : {header : "Deepfakes", description : "This feature allows producers to generate synthetic content that replaces a person in the content with someone else's likeness. It can render video and audio using the target person's likeness, or it can alter person's attributes, such as de-aging or aging an actor. It can detect a person's face, eye, face landmarks, and body in reference image. It can identify target person's face and voice, and it can estimate similarity of produced content and reference content.",
+            "Deepfake" : {header : "Deepfakes", description : "This feature allows producers to generate synthetic content that replaces a person in the content with someone else's likeness. It can render video and audio using the target person's likeness, or it can alter person's attributes, such as de-aging or aging an actor. It can detect a person's face, eye, face landmarks, and body in reference image. It can identify target person's face and voice, and it can estimate similarity of produced content and reference content.",
             capabilityList : [
                 {level1 : "Detect face in reference image"},
                 {level1 : "Detect eye, mouth, and face landmarks in reference image"},
@@ -447,7 +447,7 @@ const updatedDomainList = {
     "Transport" : {
         title : "Transportation",
         featureList : {
-            "ldp" : {header : "Lane Departure Prediction", description : "This feature alerts the driver of a vehicle when they may be unintentionally leaving their lane. The feature detects if a vehicle is leaving its lane by detecting lanes in camera, and estimating vehicle's position in relation to lanes. It detects nearby vehicles in sensor stream. It then estimates the likelihood of the vehicle to depart lane, and estimates the likelihood of collision in case of lane departure.",
+            "Lane" : {header : "Lane Departure Prediction", description : "This feature alerts the driver of a vehicle when they may be unintentionally leaving their lane. The feature detects if a vehicle is leaving its lane by detecting lanes in camera, and estimating vehicle's position in relation to lanes. It detects nearby vehicles in sensor stream. It then estimates the likelihood of the vehicle to depart lane, and estimates the likelihood of collision in case of lane departure.",
             capabilityList : [
                 {level1 : "Detect lane in image "},
                 {level1 : "Estimate lane position of vehicle"},
@@ -460,7 +460,7 @@ const updatedDomainList = {
              customValue : "The feature increases users' safety by reducing errors.",
              serviceType : "B2C" ,
             },
-            "nrp" : {header : "Navigation Route Planner", description : "This feature provides users an optimal route to a destination based on the provided criteria and constraints, such as weather, traffic, and road closures. It can estimate travel time of a route, and forecast traffic impact to curate a set of routes users can choose from.",
+            "Navigation" : {header : "Navigation Route Planner", description : "This feature provides users an optimal route to a destination based on the provided criteria and constraints, such as weather, traffic, and road closures. It can estimate travel time of a route, and forecast traffic impact to curate a set of routes users can choose from.",
             capabilityList : [
                 {level1 : "Estimate street and direction of vehicle"},
                 {level1 : "Forecast traffic impact of route"},
@@ -471,7 +471,7 @@ const updatedDomainList = {
              customValue : "The feature improves users' experience by saving their time. It also provides users estimated arrival time to support their decision making.",
              serviceType : "B2C" ,
             },
-            "ap" : {header : "Autonomous Parking", description : "This feature enables vehicles to autonomously move from a traffic lane into a parking spot. Vehicles can detect nearby objects and people in sensor stream, and identify objects such as other vehicles. They can estimate size of parking space, generate a motion path for parking, and act the motion path to continuously adjust the micro movements.",
+            "Autonomous" : {header : "Autonomous Parking", description : "This feature enables vehicles to autonomously move from a traffic lane into a parking spot. Vehicles can detect nearby objects and people in sensor stream, and identify objects such as other vehicles. They can estimate size of parking space, generate a motion path for parking, and act the motion path to continuously adjust the micro movements.",
             capabilityList : [
                 {level1 : "Identify driver's intent to park in vehicle telemetry"},
                 {level1 : "Detect objects in sensor stream"},
@@ -490,7 +490,7 @@ const updatedDomainList = {
     "HR" : {
         title : "Human Resources & Management",
         featureList : {
-            "rs" : {header : "Resume Screening", description : "This feature assists hiring managers of companies by prescreening resumes. It can identify a canditate's relevant skills, competence, and specialization. It can rank candidates based on the potential match for the position.",
+            "Resume" : {header : "Resume Screening", description : "This feature assists hiring managers of companies by prescreening resumes. It can identify a canditate's relevant skills, competence, and specialization. It can rank candidates based on the potential match for the position.",
             capabilityList : [
                 {level1 : "Identify skills in text"},
                 {level1 : "Identify competence in text"},
@@ -501,7 +501,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent screening candidates.",
              serviceType : "B2B" ,
             },
-            "hc" : {header : "HR Chatbot", description : "This feature assists employees in the workplace by answering frequent questions about their work, such as requesting PTO balance. It can identify questions, generate best answers and rank tasks or workflows that are relevant to the user query.",
+            "HR" : {header : "HR Chatbot", description : "This feature assists employees in the workplace by answering frequent questions about their work, such as requesting PTO balance. It can identify questions, generate best answers and rank tasks or workflows that are relevant to the user query.",
             capabilityList : [
                 {level1 : "Identify subject in user query"},
                 {level1 : "Generate response to user query "},
@@ -511,7 +511,7 @@ const updatedDomainList = {
              customValue : "The feature improves users' experience by reducing tedium in obtaining information.",
              serviceType : "B2B" ,
             },
-            "ws" : {header : "Workforce Scheduling", description : "This feature generates a schedule for employees by assigning them to shifts or to customers, typically in contexts such as hospitality, maintenance and healthcare. It can forecast demand for staffing, and estimate priority of cases. Managers can then customize this schedule based on employee needs.",
+            "Workforce" : {header : "Workforce Scheduling", description : "This feature generates a schedule for employees by assigning them to shifts or to customers, typically in contexts such as hospitality, maintenance and healthcare. It can forecast demand for staffing, and estimate priority of cases. Managers can then customize this schedule based on employee needs.",
             capabilityList : [
                 {level1 : "Forecast demand for staffing"},
                 {level1 : "Estimate priority of cases"},
@@ -526,7 +526,7 @@ const updatedDomainList = {
     "Education" : {
         title : "Education",
         featureList : {
-            "aes" : {header : "Automated Essay Scoring", description : "This feature assigns grades to essays by identifying text attributes such as style, coherence, and organization.",
+            "Automated" : {header : "Automated Essay Scoring", description : "This feature assigns grades to essays by identifying text attributes such as style, coherence, and organization.",
             capabilityList : [
                 {level1 : "Identify style in text"},
                 {level1 : "Identify organization in text"},
@@ -537,7 +537,7 @@ const updatedDomainList = {
              customValue : "The feature reduces tedious work and saves users' time and effort spent grading essays.",
              serviceType : "B2B" ,
             },
-            "plp" : {header : "Personalized Lesson Plans", description : "This feature allows students to follow a personalized learning plan, particularly in massive open online courses. It can estimate an individual student's skill level and skill acquisition. It can compare math problems based on their effectiveness on students' learning. It can also compare a group of skills by learning impact to offer best skills for the student in a certain order. It can discover student stereotypes by learning, and it can generate a learning plan for an individual student.",
+            "PersonalizedLesson" : {header : "Personalized Lesson Plans", description : "This feature allows students to follow a personalized learning plan, particularly in massive open online courses. It can estimate an individual student's skill level and skill acquisition. It can compare math problems based on their effectiveness on students' learning. It can also compare a group of skills by learning impact to offer best skills for the student in a certain order. It can discover student stereotypes by learning, and it can generate a learning plan for an individual student.",
             capabilityList : [
                 {level1 : "Estimate skill acquisition of student"},
                 {level1 : "Estimate skill level of student"},
@@ -555,7 +555,7 @@ const updatedDomainList = {
     "Gov" : {
         title : "Governance & Policy",
         featureList : {
-            "cwra" : {header : "Child Welfare Risk Assessment", description : "This feature assesses the likelihood of current or future maltreatment to a child or adolescent to help welfare workers assess families. It can forecast maltreatment risk for a child, and forecast the likelihood of repeated maltreatment. It can also discover relationships between child maltreatment and environmental factors, such as geographical location or neighborhood.",
+            "Child" : {header : "Child Welfare Risk Assessment", description : "This feature assesses the likelihood of current or future maltreatment to a child or adolescent to help welfare workers assess families. It can forecast maltreatment risk for a child, and forecast the likelihood of repeated maltreatment. It can also discover relationships between child maltreatment and environmental factors, such as geographical location or neighborhood.",
             capabilityList : [
                 {level1 : "Forecast maltreatment risk for child"},
                 {level1 : "Forecast likelihood of repeated maltreatment"},
@@ -565,7 +565,7 @@ const updatedDomainList = {
              customValue : "The feature supports welfare workers' decision making by providing insights.",
              serviceType : "B2B" ,
             },
-            "idf" : {header : "Infectious Disease Forecasting", description : "This feature predicts characteristics of epidemics or pandemics to inform preparation and mitigation efforts. It can identify symptom-related words in user queries and estimate the likelihood that a user might be experiencing symptoms. It can discover the relationships between symptom searches and infections. Based on these information, it can estimate the number of infected people, and forecast the rate of infection as well as the peak points.",
+            "Infectious" : {header : "Infectious Disease Forecasting", description : "This feature predicts characteristics of epidemics or pandemics to inform preparation and mitigation efforts. It can identify symptom-related words in user queries and estimate the likelihood that a user might be experiencing symptoms. It can discover the relationships between symptom searches and infections. Based on these information, it can estimate the number of infected people, and forecast the rate of infection as well as the peak points.",
             capabilityList : [
                 {level1 : "Identify words in user query"},
                 {level1 : "Estimate symptom-relevance of user query"},
@@ -583,7 +583,7 @@ const updatedDomainList = {
     "Science" : {
         title : "Science",
         featureList : {
-            "awm" : {header : "Aerial Wildlife Monitoring", description : "This feature allows tracking animal species for environmental research and wildlife preservation. It can detect and identify animal species in satellite images, and estimate the number of animals. It can also discover animal movement patterns and animal habitats in images.",
+            "Aerial" : {header : "Aerial Wildlife Monitoring", description : "This feature allows tracking animal species for environmental research and wildlife preservation. It can detect and identify animal species in satellite images, and estimate the number of animals. It can also discover animal movement patterns and animal habitats in images.",
             capabilityList : [
                 {level1 : "Detect animal in image"},
                 {level1 : "Identify animals in image"},
@@ -595,7 +595,7 @@ const updatedDomainList = {
              customValue : "n/a",
              serviceType : "B2B" ,
             },
-            "wp" : {header : "Weather Prediciton", description : "This feature predicts weather conditions for a given location and time based on current conditions and historic data. It can forecast a weather condition such as snow and rain, and estimate its intensity. It can forecast the temperature for a specific location.",
+            "Weather" : {header : "Weather Prediciton", description : "This feature predicts weather conditions for a given location and time based on current conditions and historic data. It can forecast a weather condition such as snow and rain, and estimate its intensity. It can forecast the temperature for a specific location.",
             capabilityList : [
                 {level1 : "Estimate weather condition for location"},
                 {level1 : "Estimate intensity of weather condition"},
