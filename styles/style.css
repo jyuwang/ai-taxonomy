@@ -195,6 +195,10 @@ button:hover {
 
 /* experimentation below */
 
+.whitetext {
+    color: white;
+}
+
 #test {
     cursor: pointer;
 }
@@ -219,11 +223,10 @@ button:hover {
 }
     
 .body-text {
-    margin-left: 175px;
+    
 }
 
 .banner {
-    margin-left: 175px;
     position: relative;
     width: 1260px;
     height: 419px;
@@ -236,16 +239,17 @@ button:hover {
 }
 
 .collection {
-    margin-left: 175px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     grid-auto-rows: minmax(100px, auto);
     padding-top: 20px;
+    padding-left: 20px;
+    /* padding: 20px, 20px; */
 }
 
 .box {
-    border: 2px solid #303838;
+    border: 2px solid #618E81;
     width: 531px;
     height: 196px;
     left: 334px;
@@ -259,9 +263,16 @@ button:hover {
     grid-template-columns: 150px 381px;
 }
 
+.box:hover {
+    border: 2px solid #303838;
+    position: relative;
+    top: -2px;
+    left: -2px;
+}
+
 .boxImg {
     position: relative;
-    top: 55px;
+    top: 50px;
 
     grid-column: 1;
     grid-row: 1;
@@ -279,5 +290,87 @@ button:hover {
 }
 
 
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #FBFDF9; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    /* font-size: 25px; */
+    color: #303838;
+    display: block;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    background-color: #DBE6E1;
+    /* color: #f1f1f1; */
+}
+
+/* The navigation menu links FOR SPECIFIC PAGE*/
+.sidenav g {
+    padding: 10px 8px 10px 32px;
+    text-decoration: none;
+    /* font-size: 25px; */
+    color: #303838;
+    display: block;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* When you mouse over the navigation links, change their color FOR SPECIFIC PAGE*/
+.sidenav g:hover {
+    background-color: #DBE6E1;
+    /* color: #f1f1f1; */
+}
+
+/* The navigation menu links */
+.sidenav b {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none;
+    /* font-size: 25px; */
+    color: #303838;
+    background-color: #DBE6E1;
+    display: block;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 
 /* https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics */
