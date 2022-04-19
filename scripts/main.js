@@ -38,20 +38,20 @@ const featurelist = document.getElementById("feature-list");
 // console.log(Object.keys(domains).sort());
 
 // generating navigation list
-for(const domain of Object.keys(updatedDomainList).sort()) {
-    let li = document.createElement("button");
-    li.innerHTML = updatedDomainList[domain].title;
-    li.addEventListener("click", () => {
-        let feature1 = Object.keys(updatedDomainList[domain].featureList)[0];
-        // setLocation(domain, feature1);
-        // changeURL(domain, feature1);
-        let path = [domain, feature1];
-        navigateTo(path);
-        console.log("please navigate to " + domain + " | " + feature1);
-    });
-    // li.id = "test"
-    navdomainlist.appendChild(li);
-}
+// for(const domain of Object.keys(updatedDomainList).sort()) {
+//     let li = document.createElement("button");
+//     li.innerHTML = updatedDomainList[domain].title;
+//     li.addEventListener("click", () => {
+//         let feature1 = Object.keys(updatedDomainList[domain].featureList)[0];
+//         // setLocation(domain, feature1);
+//         // changeURL(domain, feature1);
+//         let path = [domain, feature1];
+//         navigateTo(path);
+//         console.log("please navigate to " + domain + " | " + feature1);
+//     });
+//     // li.id = "test"
+//     navdomainlist.appendChild(li);
+// }
 
 
 // setLocation("Education", "aes");
@@ -197,6 +197,8 @@ function buildLanding(){
         elem.src = "images\\Feature Icons\\" + feature1 + "_1.svg";
         elem.alt = updatedDomainList[domain].title + " Icon";
 
+        box.onmouseover = () => {elem.src = "images\\Feature Icons\\" + feature1 + ".svg";}
+        box.onmouseout = () => {elem.src = "images\\Feature Icons\\" + feature1 + "_1.svg";}
         // prep Feature list insertion
         let featureListString = "";
         for(let x in updatedDomainList[domain].featureList) {
@@ -349,6 +351,10 @@ function navigateTo(path) {
 // FireFox doesn't actually call the popstate event on initial page load, so call it. This is redundant for other browsers
 updateFromSearch();
 
+
+// for(const domain of Object.keys(updatedDomainList).sort()) {
+//     console.log(updatedDomainList[domain].title + " --> " + domain);
+// }
 
 // initalPageLoad();
 
