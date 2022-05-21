@@ -289,6 +289,60 @@ button:hover {
     grid-row: 1;
 }
 
+.accordion {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-top: 20px;
+    padding-left: 20px;
+    /* padding: 20px, 20px; */
+}
+
+.accordionElement {
+    border: 2px solid #618E81;
+    width: 1000px;
+    height: 400px;
+    left: 334px;
+    top: 891px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 150px 381px;
+}
+
+.accordionImg {
+    position: relative;
+    top: 50px;
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.accordionText1 {
+    position: relative;
+    top: -10px;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.accordionText2 {
+    position: relative;
+    top: -10px;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    grid-column: 3;
+    grid-row: 1;
+}
 
 /* The sidebar menu */
 .sidenav {
